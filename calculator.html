@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/87df78beab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cal.css">
+    
+</head>   
+<body>
+    <div id="wrap">
+        <div id="calbox">
+            <div id="snav">
+                <span>Calculator</span>
+                <div id="icon">
+                    <span>-</span>
+                    <button id="box"></button>
+                    <span>x</span>
+                </div>
+            </div>
+
+            <div id="stan">
+                <div id="three">
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Standard</h2>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+                <div id="reload">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>  
+            </div>
+            <div id="calculator">
+            <div id="sc">
+            </div>
+
+            
+        <div id="div1"></div>
+        <div id="div2"></div>
+
+            <div id="mseries">
+                <button>MC</button>
+                <button>MR</button>
+                <button>M+</button>
+                <button>MS</button>
+                <button>MS</button>
+                <button>M-</button>
+            </div>
+            
+            <div id="numcon">
+                <div id="firstline">
+                    <button onclick="appendToDisplay('%')">%</button>
+                    <button onclick="clearDisplay()">CE</button>
+                    <button onclick="clearDisplay()">C</button>
+                    <button  onclick="del()" ><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+                <div id="firstline">
+                    <button>1/x</button>
+                    <button>x²</button>
+                    <button onclick="appendToDisplay('✓')">✓x</button>
+                    <button onclick="appendToDisplay('/')">/</i></button>
+                </div>
+                <div id="firstline">
+                    <button onclick="appendToDisplay('7')" style="background-color: white; font-weight: 700;">7</button>
+                    <button onclick="appendToDisplay('8')" style="background-color: white; font-weight: 700">8</button>
+                    <button onclick="appendToDisplay('9')" style="background-color: white; font-weight: 700">9</button>
+                    <button onclick="operate('*')">×</i></button>
+                </div>
+                <div id="firstline">
+                    <button onclick="appendToDisplay('4')" style="background-color: white; font-weight: 700">4</button>
+                    <button onclick="appendToDisplay('5')" style="background-color: white; font-weight: 700">5</button>
+                    <button onclick="appendToDisplay('6')" style="background-color: white; font-weight: 700">6</button>
+                    <button onclick="operate('-')">-</i></button>
+                </div>
+                <div id="firstline">
+                    <button onclick="appendToDisplay('3')" style="background-color: white; font-weight: 700">3</button>
+                    <button onclick="appendToDisplay('2')" style="background-color: white;font-weight: 700">2</button>
+                    <button onclick="appendToDisplay('1')" style="background-color: white;font-weight: 700">1</button>
+                    <button onclick="operate('+')">+</i></button>
+                </div>
+                <div id="firstline">
+                    <button onclick="appendToDisplay('±')" style="background-color: white;">±</button>
+                    <button onclick="appendToDisplay('0')" style="background-color: white;">0</button>
+                    <button onclick="appendToDisplay('.')" style="background-color: white;">.</button>
+                    <button onclick="calculateResult()">=</i></button>
+                </div>
+           
+          </div>
+        </div>
+       
+    </div>
+</body>
+<script src="ccal.js"></script>
+</html>
